@@ -12,8 +12,7 @@ let page2 = document.getElementById("second-page");
 let page3 = document.getElementById("third-page");
 let numbers = document.getElementById("number");
 
-console.log(list);
-console.log(tableList);
+
 
 
 
@@ -24,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 filterInput.addEventListener("keyup",filter);
-one.addEventListener("click",first)
+one.addEventListener("click",first);
 two.addEventListener("click",second);
 three.addEventListener("click",third);
 
@@ -143,7 +142,7 @@ function filter(e) {
             
         }
         if (filterValue===""){
-            first();
+            listFirst();
         }
     });
 
