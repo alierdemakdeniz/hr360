@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Preahvihear&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="sytle.css">
+
+        <title>Document</title>
+    </head>
+    <body>
+        <nav>
+
+            <div class="logo-container">
+                <img src="icon/hr-lg.png">
+                <p class="hr-text">HR.360</p>
+            </div>
+
+            <div class="menu-items">
+                <ul class="nav-link">
+                    <li>
+                        <a href="#">
+                            <img src="icon/dashboard.png">
+                            <span class="link-name">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="employee">
+                            <img src="icon/employee.png">
+                            <span class="link-name">Employee</span>
+                            <img src="icon/arrow.png" id="arrow">
+                        </a>
+                    </li>
+                    <ul id="employee-open" class="close">
+                        <li class="employee-down">
+                            <a href="#">
+                                <span class="link-name down ">Employee directory
+                                </span>
+                            </a>
+                        </li>
+                        <li class="employee-down">
+                            <a href="#">
+                                <span class="link-name down">Attendance</span>
+                            </a>
+                        </li>
+                        <li class="employee-down">
+                            <a href="#">
+                                <span class="link-name down">Leave requests</span>
+                            </a>
+                        </li>
+                        <li class="employee-down">
+                            <a href="#">
+                                <span class="link-name down">Leave requests</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="#">
+                            <img src="icon/recuitment.png">
+                            <span class="link-name">Recuitment</span>
+                            <img src="icon/arrow.png" id="arrow">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="icon/performace.png">
+                            <span class="link-name">Performance Mgt</span>
+                            <img src="icon/arrow.png" id="arrow">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="icon/payroll.png">
+                            <span class="link-name">Payroll</span>
+                            <img src="icon/arrow.png" id="arrow">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="icon/traning.png">
+                            <span class="link-name">Traning and Development</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="icon/schedule.png">
+                            <span class="link-name">Schedule</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="icon/reports.png">
+                            <span class="link-name">Reports and Analytics</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="log-help">
+                    <li>
+                        <a href="#">
+                            <img src="icon/help.png">
+                            <span class="link-name">Help</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="icon/logout.png">
+                            <span class="link-name">Logout</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <section class="top-nav">
+            <div class="top">
+                <p class="nav-text">
+                    <span>
+                        Welcome Back,</span><span class="nav-text bold">Barbara</span>
+                </p>
+                <div class="right-nav">
+                    <div class="left-top">
+                        <img src="icon/notification.png">
+                        <img src="icon/mail.png">
+                        <img src="icon/setting.png">
+                    </div>
+                    <div class="user-nav">
+                        <img src="icon/user.png">
+                        <img src="icon/arrow.png" id="arrow">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page">
+            <div class="page-name">
+                <span class="page-text">Employee Attendance</span>
+                <div class="date-time"></div>
+            </div>
+            <div class="page-title">
+                <span class="page-titles">Dashboard</span>
+                <span class="dot"></span>
+                <span class="page-titles">Employee</span>
+                <span class="dot"></span>
+                <span class="page-titles active">Attendance</span>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <div class="card-tittle">
+                    <img src="icon/total.png" class="card-img">
+                    <p class="card-text">
+                        <span class="green">10%</span>vs last month</p>
+                </div>
+                <div class="card-main">
+                    <p class="card-main-text">Total Workforce</p>
+                    <p class="card-main-number">150</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tittle">
+                    <img src="icon/present.png" class="card-img">
+                    <p class="card-text">
+                        <span class="green">10%</span>
+                        vs last month</p>
+                </div>
+                <div class="card-main">
+                    <p class="card-main-text">Present Workforce</p>
+                    <p class="card-main-number">125</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tittle">
+                    <img src="icon/absent.svg" class="card-img">
+                    <p class="card-text">
+                        <span class="red">10%</span>
+                        vs last month</p>
+                </div>
+                <div class="card-main">
+                    <p class="card-main-text">Absent Workforce</p>
+                    <p class="card-main-number">15</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tittle">
+                    <img src="icon/late.png" class="card-img">
+                    <p class="card-text">
+                        <span class="green">10%</span>
+                        vs last month</p>
+                </div>
+                <div class="card-main">
+                    <p class="card-main-text">Late arrivals</p>
+                    <p class="card-main-number">5</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tittle">
+                    <img src="icon/beach.svg" class="card-img">
+                    <p class="card-text">
+                        <span class="green">10%</span>
+                        vs last month</p>
+                </div>
+                <div class="card-main">
+                    <p class="card-main-text">On leave</p>
+                    <p class="card-main-number">5</p>
+                </div>
+            </div>
+        </section>
+        <section class="datatable">
+            <div class="search-filter-bar">
+                <img src="icon/search.png" class="search-icn">
+                <input
+                    type="text"
+                    id="search"
+                    class="search-bar"
+                    placeholder="Search By Name,Role...">
+
+            </div>
+            <div class="datatables">
+                <table class="table">
+                    <thead>
+                        <tr class="thead-tr">
+                            <th onclick="sortTable(0)" >Date</th>
+                            <th onclick="sortTable(1)">Employee</th>
+                            <th onclick="sortTable(2)">Role</th>
+                            <th onclick="sortTable(3)">Employment Type</th>
+                            <th onclick="sortTable(4)">Status</th>
+                            <th onclick="sortTable(5)">Check In</th>
+                            <th onclick="sortTable(6)">Check Out</th>
+                            <th onclick="sortTable(7)">Over Time</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr class="tbody-tr">
+                            <td>02/15</td>
+                            <td class="table-user">
+                                <img src="icon/user-Aisha.png">
+                                <span class="table-text">Aisha Doe</span>
+                            </td>
+                            <td class="role">HR Manager</td>
+                            <td class="emp-typ">Full-Time</td>
+                            <td>Present</td>
+                            <td>09:00 AM</td>
+                            <td>05:00 PM</td>
+                            <td>0h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>06/04</td>
+                            <td class="table-user">
+                                <img src="icon/user-chuk.png">
+                                <span class="table-text">Chukwuemeka</span>
+                            </td>
+                            <td class="role">Software Engineer</td>
+                            <td>Part-Time</td>
+                            <td>Absent</td>
+                            <td>09:30 AM</td>
+                            <td>06:00 PM</td>
+                            <td>0h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>02/04</td>
+                            <td class="table-user">
+                                <img src="icon/user-suleiman.png">
+                                <span class="table-text">Suleiman</span>
+                            </td>
+                            <td class="role">Marketing Executive</td>
+                            <td class="emp-typ">Full-Time</td>
+                            <td>Late</td>
+                            <td>10:15 AM</td>
+                            <td>05:00 PM</td>
+                            <td>0h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>04/08</td>
+                            <td class="table-user">
+                                <img src="icon/user-olamide.png">
+                                <span class="table-text">Olamide</span>
+                            </td>
+                            <td class="role">Marketing Executive</td>
+                            <td class="emp-typ">Full-Time</td>
+                            <td>Late</td>
+                            <td>10:15 AM</td>
+                            <td>05:00 PM</td>
+                            <td>0h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>12/05</td>
+                            <td class="table-user">
+                                <img src="icon/user-olamide.png">
+                                <span class="table-text">Olamide</span>
+                            </td>
+                            <td class="role">Financial Analyst</td>
+                            <td class="emp-typ">Part-Time</td>
+                            <td>Present</td>
+                            <td>09:00 AM</td>
+                            <td>06:00 PM</td>
+                            <td>1h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>06/31</td>
+                            <td class="table-user">
+                                <img src="icon/user-jide.png">
+                                <span class="table-text">Jide</span>
+                            </td>
+                            <td class="role">Project Manager</td>
+                            <td class="emp-typ">Full-Time</td>
+                            <td>Present</td>
+                            <td>09:00 AM</td>
+                            <td>05:00 PM</td>
+                            <td>0h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>07/15</td>
+                            <td class="table-user">
+                                <img src="icon/user-femi.png">
+                                <span class="table-text">Femi</span>
+                            </td>
+                            <td class="role">Sales Manager</td>
+                            <td class="emp-typ">Part-time</td>
+                            <td>Late</td>
+                            <td>09:00 AM</td>
+                            <td>07:00 PM</td>
+                            <td>2h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>01/16</td>
+                            <td class="table-user">
+                                <img src="icon/user-olamide.png">
+                                <span class="table-text">Olamide</span>
+                            </td>
+                            <td class="role">Financial Analyst</td>
+                            <td class="emp-typ">Part-Time</td>
+                            <td>Present</td>
+                            <td>09:00 AM</td>
+                            <td>06:00 PM</td>
+                            <td>1h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>06/12</td>
+                            <td class="table-user">
+                                <img src="icon/user-jide.png">
+                                <span class="table-text">Jide</span>
+                            </td>
+                            <td class="role">Project Manager</td>
+                            <td class="emp-typ">Full-Time</td>
+                            <td>Present</td>
+                            <td>09:00 AM</td>
+                            <td>05:00 PM</td>
+                            <td>0h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>06/10</td>
+                            <td class="table-user">
+                                <img src="icon/user-femi.png">
+                                <span class="table-text">Femi</span>
+                            </td>
+                            <td class="role">Sales Manager</td>
+                            <td class="emp-typ">Part-time</td>
+                            <td>Late</td>
+                            <td>09:00 AM</td>
+                            <td>07:00 PM</td>
+                            <td>2h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>11/05</td>
+                            <td class="table-user">
+                                <img src="icon/user-jide.png">
+                                <span class="table-text">Jide</span>
+                            </td>
+                            <td class="role">Project Manager</td>
+                            <td class="emp-typ">Full-Time</td>
+                            <td>Present</td>
+                            <td>09:00 AM</td>
+                            <td>05:00 PM</td>
+                            <td>0h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>12/06</td>
+                            <td class="table-user">
+                                <img src="icon/user-femi.png">
+                                <span class="table-text">Femi</span>
+                            </td>
+                            <td class="role">Sales Manager</td>
+                            <td class="emp-typ">Part-time</td>
+                            <td>Late</td>
+                            <td>09:00 AM</td>
+                            <td>07:00 PM</td>
+                            <td>2h</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>04/13</td>
+                            <td class="table-user">
+                                <img src="icon/user-olamide.png">
+                                <span class="table-text">Olamide</span>
+                            </td>
+                            <td class="role">Financial Analyst</td>
+                            <td class="emp-typ">Part-Time</td>
+                            <td>Present</td>
+                            <td>09:00 AM</td>
+                            <td>06:00 PM</td>
+                            <td>1h</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="list-info">
+                <p id="first-page" >Showing 1 to 5 of 13</p>
+                <p id="second-page" >Showing 6 to 10 of 13</p>
+                <p id="third-page" >Showing 11 to 13</p>
+
+                <div id="number">
+                    <ul>
+                        <li>
+                            <li><a href="#" class="one btn">1</a></li>
+                                <li><a href="#" class="two btn">2</a></li> <li><a href="#" class="three btn">3</a></li>
+                                
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
