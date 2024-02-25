@@ -122,7 +122,7 @@
             <div class="top">
                 <p class="nav-text">
                     <span>
-                        Welcome Back,</span><span class="nav-text bold">Barbara</span>
+                        Welcome Back,</span><span class="nav-text normal">Barbara</span>
                 </p>
                 <div class="right-nav">
                     <div class="left-top">
@@ -217,15 +217,39 @@
                 <input
                     type="text"
                     id="search"
-                    class="search-bar"
+                    class="bar"
                     placeholder="Search By Name,Role...">
+                    <select id="filter" class="bar">
+                        <option value="Choose Filter" class="text">Choose Filter</option> 
+                        <optgroup label="Role">
+                            <option value="HR Manager" class="text">HR Manager</option> 
+                            <option value="Software Engineer" class="text">Software Engineer</option>
+                            <option value="Financial Analyst" class="text">Financial Analyst</option> 
+                            <option value="Sales Manager" class="text">Sales Manager</option> 
+                            <option value="Marketing Executive" class="text">Marketing Executive</option> 
+                            <option value="Project Manager" class="text">Project Manager</option> 
+                        </optgroup>
+                        <optgroup label="Employment Type">
+                            <option value="Full-Time" class="text">Full-Time</option> 
+                            <option value="Part-Time" class="text">Part-Time</option> 
+                            <option value="Remote" class="text">Remote</option>
+                        </optgroup>
+                        <optgroup label="Status">
+                            <option value="Full-Time" class="text">Full-Time</option> 
+                            <option value="Part-Time" class="text">Part-Time</option> 
+                            <option value="Remote" class="text">Remote</option>
+                        </optgroup>
+                        
+                        
+                    </select>
+                        
 
             </div>
             <div class="datatables">
                 <table class="table">
                     <thead>
                         <tr class="thead-tr">
-                            <th onclick="sortTable(0)" >Date</th>
+                            <th onclick="sortTable(0)">Date</th>
                             <th onclick="sortTable(1)">Employee</th>
                             <th onclick="sortTable(2)">Role</th>
                             <th onclick="sortTable(3)">Employment Type</th>
@@ -233,6 +257,7 @@
                             <th onclick="sortTable(5)">Check In</th>
                             <th onclick="sortTable(6)">Check Out</th>
                             <th onclick="sortTable(7)">Over Time</th>
+                            <th onclick="sortTable(8)">Salary</th>
                         </tr>
                     </thead>
                     <tbody >
@@ -248,6 +273,7 @@
                             <td>09:00 AM</td>
                             <td>05:00 PM</td>
                             <td>0h</td>
+                            <td>10.000</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>06/04</td>
@@ -261,6 +287,7 @@
                             <td>09:30 AM</td>
                             <td>06:00 PM</td>
                             <td>0h</td>
+                            <td>10.000</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>02/04</td>
@@ -274,6 +301,7 @@
                             <td>10:15 AM</td>
                             <td>05:00 PM</td>
                             <td>0h</td>
+                            <td>10.000</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>04/08</td>
@@ -287,6 +315,7 @@
                             <td>10:15 AM</td>
                             <td>05:00 PM</td>
                             <td>0h</td>
+                            <td>14.000</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>12/05</td>
@@ -300,6 +329,7 @@
                             <td>09:00 AM</td>
                             <td>06:00 PM</td>
                             <td>1h</td>
+                            <td>8.000</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>06/31</td>
@@ -313,6 +343,7 @@
                             <td>09:00 AM</td>
                             <td>05:00 PM</td>
                             <td>0h</td>
+                            <td>10.000</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>07/15</td>
@@ -321,11 +352,12 @@
                                 <span class="table-text">Femi</span>
                             </td>
                             <td class="role">Sales Manager</td>
-                            <td class="emp-typ">Part-time</td>
+                            <td class="emp-typ">Remote</td>
                             <td>Late</td>
                             <td>09:00 AM</td>
                             <td>07:00 PM</td>
                             <td>2h</td>
+                            <td>12.000</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>01/16</td>
@@ -339,6 +371,7 @@
                             <td>09:00 AM</td>
                             <td>06:00 PM</td>
                             <td>1h</td>
+                            <td>10.000</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>06/12</td>
@@ -352,6 +385,7 @@
                             <td>09:00 AM</td>
                             <td>05:00 PM</td>
                             <td>0h</td>
+                            <td>30.000</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>06/10</td>
@@ -359,12 +393,13 @@
                                 <img src="icon/user-femi.png">
                                 <span class="table-text">Femi</span>
                             </td>
-                            <td class="role">Sales Manager</td>
+                            <td class="role">Project Manager</td>
                             <td class="emp-typ">Part-time</td>
                             <td>Late</td>
                             <td>09:00 AM</td>
                             <td>07:00 PM</td>
                             <td>2h</td>
+                            <td>7.500</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>11/05</td>
@@ -378,6 +413,7 @@
                             <td>09:00 AM</td>
                             <td>05:00 PM</td>
                             <td>0h</td>
+                            <td>20.000</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>12/06</td>
@@ -386,11 +422,12 @@
                                 <span class="table-text">Femi</span>
                             </td>
                             <td class="role">Sales Manager</td>
-                            <td class="emp-typ">Part-time</td>
+                            <td class="emp-typ">Full-Time</td>
                             <td>Late</td>
                             <td>09:00 AM</td>
                             <td>07:00 PM</td>
                             <td>2h</td>
+                            <td>18.000</td>
                         </tr>
                         <tr class="tbody-tr">
                             <td>04/13</td>
@@ -404,21 +441,32 @@
                             <td>09:00 AM</td>
                             <td>06:00 PM</td>
                             <td>1h</td>
+                            <td>13.000</td>
+                        </tr>
+                        <tr class="tbody-tr">
+                            <td>06/12</td>
+                            <td class="table-user">
+                                <img src="icon/user-jide.png">
+                                <span class="table-text">Jide</span>
+                            </td>
+                            <td class="role">Project Manager</td>
+                            <td class="emp-typ">Remote</td>
+                            <td>Present</td>
+                            <td>09:00 AM</td>
+                            <td>05:00 PM</td>
+                            <td>5h</td>
+                            <td>15.000</td>
                         </tr>
 
                     </tbody>
                 </table>
             </div>
             <div class="list-info">
-                <p id="first-page" >Showing 1 to 5 of 13</p>
-                <p id="second-page" >Showing 6 to 10 of 13</p>
-                <p id="third-page" >Showing 11 to 13</p>
-
+                <p id="page" ></p>
                 <div id="number">
                     <ul>
-                        <li>
-                            <li><a href="#" class="one btn">1</a></li>
-                                <li><a href="#" class="two btn">2</a></li> <li><a href="#" class="three btn">3</a></li>
+                        <li id="page-numbers">
+                            
                                 
                         </li>
                     </ul>
